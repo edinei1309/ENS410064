@@ -1,0 +1,96 @@
+##################Aula 1#############################################################################################
+Microsoft Windows [versão 10.0.18363.1082]
+(c) 2019 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\edinei.acm>dir ENS410064 ###################################################### dir -> ve o que tem dentro
+ O volume na unidade C é Acer
+ O Número de Série do Volume é 5E82-CEAE
+
+ Pasta de C:\Users\edinei.acm\ENS410064
+
+09/20/2023  04:24 PM    <DIR>          .
+09/20/2023  04:24 PM    <DIR>          ..
+09/20/2023  04:17 PM        25,932,664 python-3.11.5-amd64.exe
+               1 arquivo(s)     25,932,664 bytes
+               2 pasta(s)   23,758,770,176 bytes disponíveis
+
+C:\Users\edinei.acm>cd ENS410064 ###################################################### cd -> entra na pasta
+
+C:\Users\edinei.acm\ENS410064>python -m venv pyEnv ##################################Cria o ambiente de dados
+
+C:\Users\edinei.acm\ENS410064>dir
+ O volume na unidade C é Acer
+ O Número de Série do Volume é 5E82-CEAE
+
+ Pasta de C:\Users\edinei.acm\ENS410064
+
+09/20/2023  04:30 PM    <DIR>          .
+09/20/2023  04:30 PM    <DIR>          ..
+09/20/2023  04:30 PM    <DIR>          pyEnv
+09/20/2023  04:17 PM        25,932,664 python-3.11.5-amd64.exe
+               1 arquivo(s)     25,932,664 bytes
+               3 pasta(s)   23,714,914,304 bytes disponíveis
+
+C:\Users\edinei.acm\ENS410064>cd pyEnv
+
+C:\Users\edinei.acm\ENS410064\pyEnv>dir
+ O volume na unidade C é Acer
+ O Número de Série do Volume é 5E82-CEAE
+
+ Pasta de C:\Users\edinei.acm\ENS410064\pyEnv
+
+09/20/2023  04:30 PM    <DIR>          .
+09/20/2023  04:30 PM    <DIR>          ..
+09/20/2023  04:30 PM    <DIR>          Include
+09/20/2023  04:30 PM    <DIR>          Lib
+09/20/2023  04:30 PM               335 pyvenv.cfg
+09/20/2023  04:30 PM    <DIR>          Scripts
+               1 arquivo(s)            335 bytes
+               5 pasta(s)   23,698,903,040 bytes disponíveis
+
+C:\Users\edinei.acm\ENS410064\pyEnv>cd scripts
+
+------Aula 1
+C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>dir
+ O volume na unidade C é Acer
+ O Número de Série do Volume é 5E82-CEAE
+
+ Pasta de C:\Users\edinei.acm\ENS410064\pyEnv\Scripts
+
+09/20/2023  04:30 PM    <DIR>          .
+09/20/2023  04:30 PM    <DIR>          ..
+09/20/2023  04:30 PM             2,077 activate
+09/20/2023  04:30 PM             1,006 activate.bat
+09/20/2023  04:30 PM            26,199 Activate.ps1
+09/20/2023  04:30 PM               393 deactivate.bat
+09/20/2023  04:30 PM           108,413 pip.exe
+09/20/2023  04:30 PM           108,413 pip3.11.exe
+09/20/2023  04:30 PM           108,413 pip3.exe
+09/20/2023  04:30 PM           270,616 python.exe
+09/20/2023  04:30 PM           259,352 pythonw.exe
+               9 arquivo(s)        884,882 bytes
+               2 pasta(s)   23,698,649,088 bytes disponíveis
+
+C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>activate ############################################### ativa o ambiente de programação, sempre que sair do cmd precisa instalar
+
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>
+
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>pip install numpy ######################################################### instala biblioteca numpy -> pacote para analisar dados
+Collecting numpy
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/93/fd/3f826c6d15d3bdcf65b8031e4835c52b7d9c45add25efa2314b53850e1a2/numpy-1.26.0-cp311-cp311-win_amd64.whl.metadata
+  Downloading numpy-1.26.0-cp311-cp311-win_amd64.whl.metadata (61 kB)
+     ---------------------------------------- 61.1/61.1 kB 249.2 kB/s eta 0:00:00
+Downloading numpy-1.26.0-cp311-cp311-win_amd64.whl (15.8 MB)
+   ---------------------------------------- 15.8/15.8 MB 2.2 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.26.0
+
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>pip install notebook ######################################################## instala jupyter
+
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>pip install jupyterlab
+
+###################################################################Executar os comandos na pasta que quiser salvar:
+
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>jupyter notebook ############################################################## executa jupyter
+OU
+(pyEnv) C:\Users\edinei.acm\ENS410064\pyEnv\Scripts>jupyter lab ############################################################## executa jupyter lab
